@@ -1,0 +1,8 @@
+# Copy into the main configuration.yaml file
+# Exclude history/logging of entity states 
+# because you do not need logging of every minute and hour change
+recorder:
+  exclude:
+    entities:
+      - sensor.spa_esphome_minute
+      - sensor.spa_esphome_hour
