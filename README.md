@@ -1,34 +1,40 @@
-# ESPHomeSpa
+Good recourses which this is made with/from:
 
-Fork of jrownys code, just hardcoded it to C instead of F.
+https://github.com/ccutrer/balboa_worldwide_app/wiki ; https://github.com/ccutrer/balboa_worldwide_app/blob/main/doc/protocol.md ; https://github.com/cribskip/esp8266_spa ; https://github.com/jrowny/ESPHomeSpa ; https://github.com/vBrolin/ESPHomeSpa
 
-This is an ESPHome version of Cribskip's esp8266 library, as such, it also runs on ESP32.
+# ESPHome Balboa Spa
 
-Most of the code is forked from https://github.com/cribskip/esp8266_spa 
+Get local control of a Balboa spa using an ESPhome supported micro controller (ESP32, ESP8266)
 
+# Funtionality
 
-Differences:
-- doesn't use MQTT, just uses ESPHome native integration
-- removed C/F temp handling, my spa was giving me inconsistent values so I hardcoded it for F
-- Added ability to set time
-- doesn't currently store any settings, just logs them
+With this project you can:
 
-TODO:
-- probably add a cpp file, so it's just not a header... it's a bit big for a header.
-- break up files
-- figure out how to have more than one sensor type since most of these should be binary sensors
-- send the configs somewhere
-- include some samples of how to configure dashboard 
-- figure out how to distribute this properly
+- View and Control:
+  - Temperature
+  - Jets
+  - Lights
+  - Time on the spa clock
+  - Onboard filtration cycles
+- View the state of the spa heater and circulation pump
+- Set temperature range (High/Low) and rest mode (Use/Rest)
 
+Upstream sources have been tested with Balboa BP2100G0 and BP601 series controllers
+This fork has been tested with a BP2100G1 controller
 
+# Hardware and Connections
 
-NOTE:
-- using ESP32 devkit, I use GPIO-17/16
+From upstream sources:
 
+- [Parts](https://github.com/cribskip/esp8266_spa#parts)
+- [Connections](https://github.com/cribskip/esp8266_spa#hardware-connections)
 
-A dasboard I made in HomeAssistant
-![HomeAssistant Dashboard](screenshot.png)
+Some parts I used:
 
-A picture of the board in a waterproof box.
-![Spa Circuit](spacircuit.jpg)
+- Wemos D1 Mini Pro with an external antenna*
+- [LM2596 Step-down voltage regulator (Aliexpress)](https://www.aliexpress.com/item/32653212622.html)
+- TTL to RS458 module
+- [Case](https://www.aliexpress.com/item/1005005341333614.html) and [PCB](https://www.aliexpress.com/item/1005003384353640.html) (Use 4X6 if you use the case as well), both Alixpress
+- [Screw terminal blocks (Aliexpress)](https://www.aliexpress.com/item/32868515933.html)
+
+  
