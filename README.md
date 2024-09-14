@@ -31,17 +31,25 @@ From upstream sources:
 
 Some parts I used:
 
-- Wemos D1 Mini Pro with an external antenna*
+- Wemos D1 Mini Pro with an [external antenna*](pictures/external_antenna.jpg)
 - [LM2596 Step-down voltage regulator (Aliexpress)](https://www.aliexpress.com/item/32653212622.html)
 - TTL to RS458 module
 - [Case](https://www.aliexpress.com/item/1005005341333614.html) and [PCB](https://www.aliexpress.com/item/1005003384353640.html) (Use 4X6 if you use the case as well), both Alixpress
 - [Screw terminal blocks (Aliexpress)](https://www.aliexpress.com/item/32868515933.html)
 
+The hardware layout I used:
+
+![1](pictures/with_esp.jpg) ![2](pictures/under_esp.jpg)
+
+*NOTE for using an external antenna. You might have a 0 ohm resistor as a jumper on your ESP board. You might have to swap the position to use an external antenna. I know I had to. It took me way too long the realize that you had to do this
+
+![3](pictures/external_antenna.jpg)
+
 # Project defaults
 
 This project is set up for a spa that has:
 
-- 3 Jets, 1 Light, a Heater, a Circulation pump, 2 Filter timeable cycles, Rest/Use mode, High/low temperature range and a clock for time
+- 3 Jets, 1 Light, Temperature in Celcius, a Heater, a Circulation pump, 2 Filter timeable cycles, Rest/Use mode, High/low temperature range and a clock for time
 
-If your spa has more or less things you will most likely changed things in the code
+If your spa has more or less or different things you will most likely changed things in the code
 
