@@ -1,1 +1,15 @@
+alias: Spa Temp Change
+description: ""
+trigger:
+  - platform: state
+    entity_id:
+      - input_number.temp_spa
+condition: []
+action:
+  - data:
+      temp: "{{ (states(\"input_number.temp_spa\") ) }}"
+    action: esphome.spa_set_target_temp
+mode: single
 
+#Create a input helper called input_number.temp_spa
+#Changing the helper value will push the new value to the spa almost immediatly
