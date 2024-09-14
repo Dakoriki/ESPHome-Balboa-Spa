@@ -1,0 +1,15 @@
+#Requires button-card
+
+type: custom:button-card
+state:
+  - value: '1'
+    icon: mdi:lightbulb-group
+    color: white
+  - value: '0'
+    icon: mdi:lightbulb-group-off-outline
+    color: grey
+tap_action:
+  action: call-service
+  service: esphome.spa_toggle_light
+entity: sensor.spa_esphome_light
+name: Lights
