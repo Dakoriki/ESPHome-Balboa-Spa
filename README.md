@@ -37,4 +37,11 @@ Some parts I used:
 - [Case](https://www.aliexpress.com/item/1005005341333614.html) and [PCB](https://www.aliexpress.com/item/1005003384353640.html) (Use 4X6 if you use the case as well), both Alixpress
 - [Screw terminal blocks (Aliexpress)](https://www.aliexpress.com/item/32868515933.html)
 
-  
+# Project defaults
+
+This project is set up for a spa that has:
+
+- 3 Jets, 1 Light, a Heater, a Circulation pump, 2 Filter timeable cycles, Rest/Use mode, High/low temperature range and a clock for time
+
+If your spa has more or less things you will most likely changed things in the code
+
