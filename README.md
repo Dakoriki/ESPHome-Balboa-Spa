@@ -1,6 +1,6 @@
 Good recourses which this is made with/froked from:
 
-https://github.com/ccutrer/balboa_worldwide_app/wiki ; https://github.com/ccutrer/balboa_worldwide_app/blob/main/doc/protocol.md ; https://github.com/cribskip/esp8266_spa ; https://github.com/jrowny/ESPHomeSpa ; https://github.com/vBrolin/ESPHomeSpa
+[Balboa worldwide app wiki](https://github.com/ccutrer/balboa_worldwide_app/wiki) ; [BWA Wiki Protocol page](https://github.com/ccutrer/balboa_worldwide_app/blob/main/doc/protocol.md) ; [Cribskip's esp8266_spa](https://github.com/cribskip/esp8266_spa) ; [jrowny's ESPHomeSpa (°F)](https://github.com/jrowny/ESPHomeSpa) ; [vBrolin's ESPHomeSpa (°C)](https://github.com/vBrolin/ESPHomeSpa)
 
 # ESPHome Balboa Spa
 
@@ -34,7 +34,7 @@ Some parts I used:
 - Wemos D1 Mini Pro with an [external antenna*](pictures/external_antenna.md)
 - [LM2596 Step-down voltage regulator (Aliexpress)](https://www.aliexpress.com/item/32653212622.html)
 - TTL to RS458 module
-- [Case**](https://www.aliexpress.com/item/1005005341333614.html) and [PCB 5X7](https://www.aliexpress.com/item/1005003384353640.html) (5X7 won't fit fully corners will have to be cut), both Alixpress
+- [Case**](https://www.aliexpress.com/item/1005005341333614.html) and [PCB 5X7](https://www.aliexpress.com/item/1005003384353640.html) (5X7 won't fit fully corners will have to be cut), both Aliexpress
 - [Screw terminal blocks (Aliexpress)](https://www.aliexpress.com/item/32868515933.html)
 
 **The case I used is kinda small, you can use a different bigger case
@@ -45,9 +45,10 @@ The hardware layout I used:
 
 # Project defaults
 
-This project is set up for a spa that has:
-
-- 3 Jets, 1 Light, Temperature in Celcius, a Heater, a Circulation pump, 2 Filter timeable cycles, Heat/Rest mode, High/low temperature range and a clock for time
+This project is set up for:
+- A Spa that has:
+  - 3 Jets, 1 Light, Temperature in Celcius, 1 Heater, 1 Circulation pump, 2 Filter timeable cycles, Heat/Rest mode, High/low temperature range and a clock for time
+- An ESP8266
 
 If your spa has more or less or different things you will most likely changed things in the code
 
