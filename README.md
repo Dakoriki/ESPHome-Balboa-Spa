@@ -1,4 +1,4 @@
-Good recourses which this is made with/from:
+Good recourses which this is made with/froked from:
 
 https://github.com/ccutrer/balboa_worldwide_app/wiki ; https://github.com/ccutrer/balboa_worldwide_app/blob/main/doc/protocol.md ; https://github.com/cribskip/esp8266_spa ; https://github.com/jrowny/ESPHomeSpa ; https://github.com/vBrolin/ESPHomeSpa
 
