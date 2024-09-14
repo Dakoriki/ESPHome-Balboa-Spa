@@ -20,7 +20,7 @@ With this project you can:
 - Set temperature range (High/Low) and rest mode (Use/Rest)
 
 Upstream sources have been tested with Balboa BP2100G0 and BP601 series controllers
-This fork has been tested with a BP2100G1 controller
+This fork has been tested with a BP2100G1 controller with an ESP8266
 
 # Hardware and Connections
 
