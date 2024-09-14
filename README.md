@@ -17,7 +17,7 @@ With this project you can:
   - Time on the spa clock
   - Onboard filtration cycles
 - View the state of the spa heater and circulation pump
-- Set temperature range (High/Low) and rest mode (Use/Rest)
+- Set temperature range (High/Low) and rest mode (Heat/Rest)
 
 Upstream sources have been tested with Balboa BP2100G0 and BP601 series controllers
 This fork has been tested with a BP2100G1 controller with an ESP8266
@@ -45,7 +45,7 @@ The hardware layout I used:
 
 This project is set up for a spa that has:
 
-- 3 Jets, 1 Light, Temperature in Celcius, a Heater, a Circulation pump, 2 Filter timeable cycles, Rest/Use mode, High/low temperature range and a clock for time
+- 3 Jets, 1 Light, Temperature in Celcius, a Heater, a Circulation pump, 2 Filter timeable cycles, Heat/Rest mode, High/low temperature range and a clock for time
 
 If your spa has more or less or different things you will most likely changed things in the code
 
