@@ -17,7 +17,7 @@ With this project you can:
   - Time on the spa clock
   - Onboard filtration cycles
 - View the state of the spa heater and circulation pump
-- Set temperature range (High/Low) and rest mode (Heat/Rest)
+- Set temperature range (High/Low) and rest mode (Ready/Rest)
 
 Upstream sources have been tested with Balboa BP2100G0 and BP601 series controllers
 This fork has been tested with a BP2100G1 controller with an ESP8266
@@ -47,8 +47,25 @@ The hardware layout I used:
 
 This project is set up for:
 - A Spa that has:
-  - 3 Jets, 1 Light, Temperature in Celcius, 1 Heater, 1 Circulation pump, 2 Filter timeable cycles, Heat/Rest mode, High/low temperature range and a clock for time
+  - 3 Jets, 1 Light, Temperature in Celcius, 1 Heater, 1 Circulation pump, 2 Timeable filter cycles, Ready/Rest mode, High/Low temperature range and a clock for time
 - An ESP8266
 
 If your spa has more or less or different things you will most likely changed things in the code
 
+# What is provided?
+
+In this repo is the .yaml configuration for esphome and the companioning c++ file that makes the magic actually happen.
+
+There are also dashboard card examples, srcipts and automations that will make setting up your spa controls in home assistant more pleasent. For most of these provided examples to work you will have to create some input helpers. 
+More specifically 13 number helpers for all the different values.
+All starting with input_number.spa_, so e.g 'input_number.spa_temp_high'
+
+- temp_high;   range 26.5 to 40 with 0.5 step size
+- clock_hour, f1_dur_hour, f1_hour, f2_dur_hour, f2_hour;   range 0 to 23 with 1 step size
+- clock_minute, f1_dur_min, f1_min, f2_dur_min, f2_min;   range 0 to 59 with 1 step size
+
+# To Do
+
+- Possibly implement the ablity to properly set target temperature in low heat mode which is 10.0 to 37.0
+- Fault codes into HA, not just esphome logger, very low priority
+- Temperature switch for F, very very low priority :P
