@@ -3,13 +3,13 @@ description: ""
 trigger:
   - platform: state
     entity_id:
-      - input_number.temp_spa
+      - input_number.spa_temp_high
 condition: []
 action:
   - data:
-      temp: "{{ (states(\"input_number.temp_spa\") ) }}"
+      temp: "{{ (states(\"input_number.spa_temp_high\") ) }}"
     action: esphome.spa_set_target_temp
 mode: single
 
-#Create a input helper called input_number.temp_spa
+#Create a input helper called input_number.spa_temp_high
 #Changing the helper value will push the new value to the spa almost immediatly
