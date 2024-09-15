@@ -66,6 +66,7 @@ All starting with input_number.spa_, so e.g 'input_number.spa_temp_high'
 
 # To Do
 
+- Fix any issues that pop up and improve the project
 - Possibly implement the ablity to properly set target temperature in low heat mode which is 10.0 to 37.0
 - Fault codes into HA, not just esphome logger, very low priority
 - Temperature switch for F, very very low priority :P
