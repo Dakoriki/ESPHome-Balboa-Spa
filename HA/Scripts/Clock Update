@@ -1,0 +1,11 @@
+alias: Spa Clock Change
+sequence:
+  - data:
+      minute: "{{ (states(\"input_number.spa_clock_minute\") ) }}"
+      hour: "{{ (states(\"input_number.spa_clock_hour\") ) }}"
+    action: esphome.spa_set_clock
+mode: single
+
+#To use this script create 2 number input helpers with the names listed above
+#Balboa's system uses a 24h clock
+#Set helper values to desired values and call the script to push values to spa in one go

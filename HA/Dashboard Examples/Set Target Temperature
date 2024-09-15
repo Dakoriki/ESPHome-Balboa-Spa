@@ -1,0 +1,18 @@
+#Requires Mushroom (mushroom-number-card)
+
+type: custom:mushroom-number-card
+entity: input_number.spa_temp_high
+fill_container: true
+display_mode: buttons
+primary_info: name
+secondary_info: none
+tap_action:
+  action: none
+hold_action:
+  action: none
+double_tap_action:
+  action: none
+icon_type: none
+icon_color: primary
+layout: vertical
+name: Set Target

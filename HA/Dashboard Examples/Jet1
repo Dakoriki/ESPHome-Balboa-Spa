@@ -1,0 +1,15 @@
+#Requires button-card
+
+type: custom:button-card
+state:
+  - value: '1'
+    icon: mdi:smoke-detector-variant
+    color: white
+  - value: '0'
+    icon: mdi:smoke-detector-variant-off
+    color: grey
+tap_action:
+  action: call-service
+  service: esphome.spa_toggle_jet1
+entity: sensor.spa_esphome_jet1
+name: Jet1

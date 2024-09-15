@@ -1,0 +1,22 @@
+alias: "Spa Set Filtration "
+sequence:
+  - delay:
+      hours: 0
+      minutes: 0
+      seconds: 3
+      milliseconds: 0
+  - data:
+      filter1hour: "{{ (states(\"input_number.spa_f1_hour\") ) }}"
+      filter1minute: "{{ (states(\"input_number.spa_f1_min\") ) }}"
+      filter1durationhour: "{{ (states(\"input_number.spa_f1_dur_hour\") ) }}"
+      filter1durationminute: "{{ (states(\"input_number.spa_f1_dur_min\") ) }}"
+      filter2enable: "{{ (states(\"input_number.spa_f2_enable\") ) }}"
+      filter2hour: "{{ (states(\"input_number.spa_f2_hour\") ) }}"
+      filter2minute: "{{ (states(\"input_number.spa_f2_min\") ) }}"
+      filter2durationhour: "{{ (states(\"input_number.spa_f2_dur_hour\") ) }}"
+      filter2durationminute: "{{ (states(\"input_number.spa_f2_dur_min\") ) }}"
+    action: esphome.spa_set_filtration
+mode: single
+
+#To use this script create 9 number input helpers with the names listed above
+#Set helper values to desired values and call the script to push values to spa in one go

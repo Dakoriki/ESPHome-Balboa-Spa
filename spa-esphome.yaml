@@ -1,23 +1,29 @@
 esphome:
   name: spa
+  friendly_name: Spa-ESPhome
   includes:
     - spa_reader.h
 
   libraries:
     - rlogiacco/CircularBuffer
 
-esp32:
-  board: esp32dev
+esp8266:
+  board: d1_mini_pro
   framework:
-    type: arduino
+    version: latest
+    
+#esp32:
+  #board: esp32dev
+  #framework:
+    #type: arduino
 
 # Enable logging
 logger:
 
 uart:
   id: spa_uart_bus
-  tx_pin: GPIO17
-  rx_pin: GPIO16
+  tx_pin: TX
+  rx_pin: RX
   data_bits: 8
   parity: NONE
   stop_bits: 1
@@ -32,7 +38,12 @@ sensor:
   lambda: |-
     auto spareader = new SpaReader(id(spa_uart_bus));
     App.register_component(spareader);
-    return {spareader->temp_sensor,spareader->target_temp_sensor,spareader->jet1_sensor,spareader->jet2_sensor,spareader->blower_sensor,spareader->light_sensor,spareader->restmode_sensor,spareader->highrange_sensor,spareader->hour_sensor,spareader->minute_sensor,spareader->heater_sensor,spareader->circ_sensor};
+    return {spareader->temp_sensor,spareader->target_temp_sensor,spareader->jet1_sensor,spareader->jet2_sensor,spareader->jet3_sensor,
+    spareader->light_sensor,spareader->restmode_sensor,spareader->highrange_sensor,spareader->hour_sensor,spareader->minute_sensor,spareader->heater_sensor,spareader->circ_sensor,
+    spareader->filt1hour_sensor,spareader->filt1minute_sensor,spareader->filt1durhour_sensor,spareader->filt1durminute_sensor,spareader->filt2enable_sensor,spareader->filt2hour_sensor,
+    spareader->filt2minute_sensor,spareader->filt2durhour_sensor,spareader->filt2durminute_sensor};
+
+# if you want to add sensors, every sensor must be in the same order in sensor: and in sensors:
 
   sensors:
   - name: "Current Temp"
@@ -43,7 +54,7 @@ sensor:
     accuracy_decimals: 1
   - name: "Jet1"
   - name: "Jet2"
-  - name: "Blower"
+  - name: "Jet3"
   - name: "Light"
   - name: "Rest Mode"
   - name: "High Range"
@@ -51,7 +62,17 @@ sensor:
   - name: "Minute"
   - name: "Heater"
   - name: "Circulation Pump"
+  - name: "Filter 1 Hour"
+  - name: "Filter 1 Minute"
+  - name: "Filter 1 Duration Hour"
+  - name: "Filter 1 Duration Minute"
+  - name: "Filter 2 Enable"
+  - name: "Filter 2 Hour"
+  - name: "Filter 2 Minute"
+  - name: "Filter 2 Duration Hour"
+  - name: "Filter 2 Duration Minute"
 # Enable Home Assistant API
+
 api:
   encryption:
     key: !secret api_enc_key

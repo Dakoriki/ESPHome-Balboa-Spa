@@ -1,0 +1,14 @@
+#Requires button-card
+
+type: custom:button-card
+state:
+  - value: '1'
+    icon: mdi:pump
+    color: cyan
+  - value: '0'
+    icon: mdi:pump
+    color: grey
+entity: sensor.spa_esphome_circulation_pump
+name: Circulation Pump
+tap_action:
+  action: none
