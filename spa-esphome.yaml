@@ -43,6 +43,8 @@ sensor:
     spareader->filt1hour_sensor,spareader->filt1minute_sensor,spareader->filt1durhour_sensor,spareader->filt1durminute_sensor,spareader->filt2enable_sensor,spareader->filt2hour_sensor,
     spareader->filt2minute_sensor,spareader->filt2durhour_sensor,spareader->filt2durminute_sensor};
 
+# if you want to add sensors, every sensor must be in the same order in sensor: and in sensors:
+
   sensors:
   - name: "Current Temp"
     unit_of_measurement: °C
