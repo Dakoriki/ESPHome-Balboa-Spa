@@ -1,7 +1,7 @@
 #Requires Mushroom (mushroom-number-card)
 
 type: custom:mushroom-number-card
-entity: input_number.temp_spa
+entity: input_number.spa_temp_high
 fill_container: true
 display_mode: buttons
 primary_info: name
