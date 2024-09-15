@@ -54,7 +54,7 @@ If your spa has more or less or different things you will most likely changed th
 
 # What is provided?
 
-In this repo is the .yaml configuration for esphome and the companioning c++ file that makes the magic actually happen.
+In this repo there is the .yaml configuration for esphome and the companion c++ file that makes the magic actually happen.
 
 There are also dashboard card examples, srcipts and automations that will make setting up your spa controls in home assistant more pleasent. For most of these provided examples to work you will have to create some input helpers. 
 More specifically 13 number helpers for all the different values.
