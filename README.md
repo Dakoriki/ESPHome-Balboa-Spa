@@ -1,6 +1,6 @@
 Good recourses which this is made with/froked from:
 
-[Balboa worldwide app wiki](https://github.com/ccutrer/balboa_worldwide_app/wiki) ; [BWA Wiki Protocol page](https://github.com/ccutrer/balboa_worldwide_app/blob/main/doc/protocol.md) ; [Cribskip's esp8266_spa](https://github.com/cribskip/esp8266_spa) ; [jrowny's ESPHomeSpa (°F)](https://github.com/jrowny/ESPHomeSpa) ; [vBrolin's ESPHomeSpa (°C)](https://github.com/vBrolin/ESPHomeSpa)
+[Balboa worldwide app wiki](https://github.com/ccutrer/balboa_worldwide_app/wiki) ; [BWA Wiki Protocol page](https://github.com/ccutrer/balboa_worldwide_app/blob/main/doc/protocol.md) ; [jshank's bwalink](https://github.com/jshank/bwalink?tab=readme-ov-file#serial-to-ip-device) ; [Cribskip's esp8266_spa](https://github.com/cribskip/esp8266_spa) ; [jrowny's ESPHomeSpa (°F)](https://github.com/jrowny/ESPHomeSpa) ; [vBrolin's ESPHomeSpa (°C)](https://github.com/vBrolin/ESPHomeSpa)
 
 # ESPHome Balboa Spa
 
