@@ -6,6 +6,13 @@ Good recourses which this is made with/froked from:
 
 Get local control of a Balboa spa using an ESPhome supported micro controller (ESP32, ESP8266)
 
+# Note on ESPhome 2025.2 and later
+
+Custom components were deprecated some time ago and now with 2025.2 the support got removed entirely. Idk if I'm going to ever make this work with the newer External Components.
+So for now you need ESPhome 2024.12 or earlier to actually compile the code. Kinda annoying...
+
+Everything still seems to work on the HA side even if a newer ESPhome version. You just can't look at the log or update the configuration in the newer releases.
+
 # Funtionality
 
 With this project you can:
