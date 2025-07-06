@@ -2,10 +2,10 @@
 
 type: custom:button-card
 state:
-  - value: '1'
+  - value: '1.0'
     icon: mdi:lightbulb-group
     color: white
-  - value: '0'
+  - value: '0.0'
     icon: mdi:lightbulb-group-off-outline
     color: grey
 tap_action:
