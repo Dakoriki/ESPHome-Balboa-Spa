@@ -5,8 +5,8 @@ show_icon: false
 show_name: true
 entity: sensor.spa_esphome_hour
 name: |
-  [[[ let hr = states['sensor.spa_esphome_hour'].state;
-      let mi = states['sensor.spa_esphome_minute'].state;
+  [[[ let hr = Math.trunc(states['sensor.spa_esphome_hour'].state);
+      let mi = Math.trunc(states['sensor.spa_esphome_minute'].state);
       return (hr > 9 ? hr : '0' + hr) + ':' + (mi > 9 ? mi : '0' + mi);]]]
 show_label: true
 styles:
