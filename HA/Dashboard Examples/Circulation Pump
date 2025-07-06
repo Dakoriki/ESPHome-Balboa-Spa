@@ -2,10 +2,10 @@
 
 type: custom:button-card
 state:
-  - value: '1'
+  - value: '1.0'
     icon: mdi:pump
     color: cyan
-  - value: '0'
+  - value: '0.0'
     icon: mdi:pump
     color: grey
 entity: sensor.spa_esphome_circulation_pump
